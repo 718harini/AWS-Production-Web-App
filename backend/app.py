@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Backend is working!"
+    return "Backend works!"
 
 
 @app.route("/api/users", methods=["POST"])
@@ -25,4 +25,4 @@ def create_user():
 
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    app.run(debug=True)
